@@ -1,0 +1,145 @@
+/* RESET & FONT */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY BACKGROUND */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  background-image: url('../img/hero-bg.jpg'); /* Sesuai struktur kamu */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PAGE WRAPPER */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* FORM WRAPPER & OVERLAY */
+.form-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.form-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Lapisan gelap transparan */
+  z-index: 0;
+}
+
+/* FORM CONTAINER */
+.form-container {
+  position: relative;
+  z-index: 1;
+  background-color: #111;
+  padding: 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  color: #fff;
+  border: 2px solid #ffeb3b;
+  box-shadow: 0 0 25px rgba(255, 235, 59, 0.2);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffeb3b;
+  text-shadow: 0 0 10px #ffeb3b;
+}
+
+/* LABEL & INPUTS */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #ffeb3b;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border: 1px solid #ffeb3b;
+  box-shadow: 0 0 5px #ffeb3b;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+  background-color: #ffeb3b;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff000;
+  transform: scale(1.03);
+}
+
+/* SUCCESS MESSAGE */
+.success-message {
+  background-color: rgba(255, 255, 0, 0.15);
+  color: #ffeb3b;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+  border: 1px solid #ffeb3b;
+}
+
+.btn-kembali {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #ffeb3b;
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-kembali:hover {
+  background-color: #ffeb3b;
+  color: #000;
+  box-shadow: 0 0 10px #ffeb3b;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 20px;
+  }
+}
+

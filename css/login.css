@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: url('../img/hero-bg.jpg'); 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff200;
+}
+
+
+.login-box {
+    background: rgba(0, 0, 0, 0.85); 
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 25px #fff200; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color:rgb(255, 255, 255);
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border: none;
+    border-radius: 6px;
+    background: #fff200;
+    color: #000;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff200;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background-color:rgb(255, 255, 255);
+}
+.error-msg {
+    background: #ff4c4c;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.login-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color:white;
+}
+.login-footer a {
+    color: #fff200;
+    text-decoration: none;
+}
+.login-footer a:hover {
+    text-decoration: underline;
+}

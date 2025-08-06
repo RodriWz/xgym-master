@@ -1,0 +1,55 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  background: url('../img/hero-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.navbar-admin {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-admin .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-admin nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar-admin nav a.active {
+  font-weight: bold;
+  color: #ffc107;
+}
+
+.navbar-admin nav a.logout {
+  color: #ff4d4d;
+}
+
+.container.content-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.form-control {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.form-control:focus {
+  background-color: #222;
+  color: #fff;
+  border-color: #ffc107;
+  box-shadow: none;
+}
